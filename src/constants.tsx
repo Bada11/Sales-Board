@@ -1,7 +1,7 @@
-import { SideNav } from "./types";
+import { SideNavBar } from "./types";
 
 
-export const SideNavItems: SideNav[] = [
+export const SideNavItems: SideNavBar[] = [
     {
         title: "Dashboard",
         path: "/"

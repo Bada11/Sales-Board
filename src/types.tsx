@@ -1,6 +1,6 @@
-export type SideNav  = {
+export type SideNavBar  = {
     title: string;
     path: string;
     subMenu?: boolean;
-    subMenuItems?: SideNav[];
+    subMenuItems?: SideNavBar[];
 }
