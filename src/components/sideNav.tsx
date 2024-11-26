@@ -1,5 +1,6 @@
 "use client"
 
+import { ChevronRight } from "lucide-react"
 import Link from "next/link"
 import React, {useState} from "react"
 import { usePathname } from "next/navigation"
@@ -42,12 +43,12 @@ const MenuItem = ({ item }: { item: SideNavBar }) => {
               }`}
             >
               <div className="flex flex-row space-x-4 items-center">
-                {/* {item.icon} */}
-                <span className="font-semibold text-xl  flex">{item.title}</span>
+                {item.icon}
+                <span className="font-semibold text-l mb-4 flex">{item.title}</span>
               </div>
   
-              <div className={`${subMenuOpen ? 'rotate-180' : ''} flex`}>
-                {/* <Icon icon="lucide:chevron-down" width="24" height="24" /> */}
+              <div className={`${subMenuOpen ? 'rotate-90' : ''} flex`}>
+                <ChevronRight />
               </div>
             </button>
   
@@ -76,8 +77,8 @@ const MenuItem = ({ item }: { item: SideNavBar }) => {
               item.path === pathname ? 'bg-zinc-100' : ''
             }`}
           >
-            {/* {item.icon} */}
-            <span className="font-semibold text-xl flex">{item.title}</span>
+            {item.icon}
+            <span className="font-semibold text-l flex mb-4 ">{item.title}</span>
           </Link>
         )}
       </div>
