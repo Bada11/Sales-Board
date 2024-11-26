@@ -8,9 +8,9 @@ import { SideNavItems } from "@/constants"
 
 const SideNav = () => {
   return (
-   
+  
 
-        <div className={``}>
+        <div className={`border-r border-zinc-200`}>
             {
                 SideNavItems.map((item, idx) => {
                     return <MenuItem key={idx} item={item} />
@@ -18,7 +18,7 @@ const SideNav = () => {
             }
         </div>
       
-    
+   
   )
 }
 
