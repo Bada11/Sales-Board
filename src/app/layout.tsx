@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`bg-white `}>
         <div className={`flex`}>
           <SideNav />
-          <main className={`flex-1`}>
+          <main className={`flex-1 /5`}>
             <MarginWidthWrapper>
             <Header />
             {children}

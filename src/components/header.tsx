@@ -1,4 +1,6 @@
+
 import React from "react";
+import {Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
 const Header = () => {
   return (
@@ -12,11 +14,10 @@ const Header = () => {
           placeholder="search..."
           className={`block bg-white h-9 w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm`}
         />
-        <img
-          src="path-to-image.jpg"
-          alt="User Profile"
-          className={`h-16 w-16 rounded-full border-2 border-black object-cover`}
-        />
+        <Avatar>
+          <AvatarImage src=""/>
+          <AvatarFallback className={`bg-black text-blue-800`}>BC</AvatarFallback>
+        </Avatar>
       </div>
     </div>
   );

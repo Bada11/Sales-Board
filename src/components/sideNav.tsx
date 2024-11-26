@@ -8,17 +8,9 @@ import { SideNavItems } from "@/constants"
 
 const SideNav = () => {
   return (
-    <div className={`md:w-60 bg-white h-screen flex-1 fixed border-r border-zinc-200 hidden md:flex`}>
-        <div className={`flex flex-col space-y-6 w-full`}>
-            <Link
-            href="/"
-            className={`flex flex-row space-x-3 items-center justify-center `} 
-            >
-              Logo  
-            </Link>
-        </div>
+   
 
-        <div>
+        <div className={``}>
             {
                 SideNavItems.map((item, idx) => {
                     return <MenuItem key={idx} item={item} />
@@ -26,7 +18,7 @@ const SideNav = () => {
             }
         </div>
       
-    </div>
+    
   )
 }
 
